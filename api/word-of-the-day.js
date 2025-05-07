@@ -10,6 +10,8 @@ export default async function wordOfTheDayHandler(req, res) {
 
   const apiUrl = `https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=${apiKey}`;
 
+  res.setHeader("Access-Control-Allow-Origin", "*");
+
   try {
     const wordnikReponse = await fetch(apiUrl);
     if (!wordnikReponse.ok) {
