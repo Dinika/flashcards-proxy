@@ -1,6 +1,6 @@
 {
     "version": 2,
     "routes": [
-      { "src": "/word-of-the-day", "dest": "/api/word-of-the-day.php" }
+      { "src": "/word-of-the-day", "dest": "/api/word-of-the-day.js" }
     ]
 }
